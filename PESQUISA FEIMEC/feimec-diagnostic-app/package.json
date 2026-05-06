@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "build:predictions": "node ./scripts/build-feimec-predictions.mjs",
+    "dev": "npm run build:predictions && next dev",
+    "build": "npm run build:predictions && next build",
     "start": "next start",
     "lint": "eslint"
   },

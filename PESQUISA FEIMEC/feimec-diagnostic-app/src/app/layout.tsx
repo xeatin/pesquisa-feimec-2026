@@ -21,9 +21,9 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FEIMEC Diagnostic OS",
+  title: "Painel do Administrador FEIMEC",
   description:
-    "App multi-tenant mockado para navegar entre diagnósticos FEIMEC com ROI, loss maps e command boards por empresa.",
+    "Cockpit executivo da FEIMEC para retenção, expansão de estandes e proteção da carteira de expositores.",
 };
 
 export default function RootLayout({
@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={`${sora.variable} ${plexSans.variable} ${plexMono.variable} h-full antialiased`}
     >
       <body className="min-h-full">{children}</body>
